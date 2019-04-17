@@ -1,0 +1,282 @@
+#h1hero{
+     color: white;
+     text-align: center;
+}
+ #p1hero{
+     color: white;
+     text-align: center;
+}
+ #submit{
+     align-self: center;
+}
+ #hero{
+     margin: 0;
+     padding: 0;
+}
+ .navbar{
+     display: inline-block;
+}
+ body{
+     color: black;
+     justify-content: center;
+     margin-left: 100px;
+     margin-right: 100px;
+}
+/*table tshirt starts here*/
+ .Table_Tshirt {
+     display: table;
+     background-color: #E7E5E5;
+}
+ .Heading {
+     display: table-row;
+     font-weight: bold;
+     text-align: center;
+}
+ .Row {
+     display: table-row;
+}
+ .Cell {
+     display: table-cell;
+     border: solid;
+     border-width: thin;
+     padding-left: 5px;
+     padding-right: 5px;
+     border: 0;
+}
+ .Tshirt_Cell{
+     color: #7D8730;
+}
+/*table_Tshirt ends here*/
+/*table_Pants starts here*/
+ .Table_Pants {
+     display: table;
+     background-color: #E7E5E5;
+}
+ .Heading {
+     display: table-row;
+     font-weight: bold;
+     text-align: center;
+}
+ .Row {
+     display: table-row;
+}
+ .Cell {
+     display: table-cell;
+     border: solid;
+     border-width: thin;
+     padding-left: 5px;
+     padding-right: 5px;
+     border: 0;
+}
+ .Pant_forclazCell{
+     color: #7D8730;
+}
+ .ci {
+     height: 25px;
+     width: 25px;
+     background-color: #bbb;
+     border-radius: 50%;
+     display: inline-block;
+}
+ .ci-blue {
+     background-color: blue;
+}
+ .ci-green {
+     background-color: green;
+}
+ .ci-red {
+     background-color: red;
+}
+/*table_pants ends here*/
+/*table_pants starts here*/
+ .Table_Backpack {
+     display: table;
+     background-color: #E7E5E5;
+}
+ .Heading {
+     display: table-row;
+     font-weight: bold;
+     text-align: center;
+}
+ .Row {
+     display: table-row;
+}
+ .Cell {
+     display: table-cell;
+     border: solid;
+     border-width: thin;
+     padding-left: 5px;
+     padding-right: 5px;
+     border: 0;
+}
+ .BackPack_Cell{
+     color: #7D8730;
+}
+/*table_pants ends here*/
+/*table_giacket starts here*/
+ .Table_Giacket {
+     display: table;
+     background-color: #E7E5E5;
+}
+ .Heading {
+     display: table-row;
+     font-weight: bold;
+     text-align: center;
+}
+ .Row {
+     display: table-row;
+}
+ .Cell {
+     display: table-cell;
+     border: solid;
+     border-width: thin;
+     padding-left: 5px;
+     padding-right: 5px;
+     border: 0;
+}
+ .Giacket_Cell{
+     color: #7D8730;
+}
+/*table giacket ends here*/
+ .Table_Shoes {
+     display: table;
+     background-color: #E7E5E5;
+}
+ .Heading {
+     display: table-row;
+     font-weight: bold;
+     text-align: center;
+}
+ .Row {
+     display: table-row;
+}
+ .Cell {
+     display: table-cell;
+     border: solid;
+     border-width: thin;
+     padding-left: 5px;
+     padding-right: 5px;
+     border: 0;
+}
+ .Shoes_Cell{
+     color: #7D8730;
+}
+/*table shoes ends here*/
+ .Table_TshirtLadies {
+     display: table;
+     background-color: #E7E5E5;
+}
+ .Heading {
+     display: table-row;
+     font-weight: bold;
+     text-align: center;
+}
+ .Row {
+     display: table-row;
+}
+ .Cell {
+     display: table-cell;
+     border: solid;
+     border-width: thin;
+     padding-left: 5px;
+     padding-right: 5px;
+     border: 0;
+}
+ .Tshirt2_Cell{
+     color: #7D8730;
+}
+ #check{
+    background-color: #BBAB8B;
+}
+ #submit{
+    background-color: #FF5B4C
+}
+ #hero {
+     background-image:url('assets/backgrounds/hero.jpg');
+     width: 1280px;
+     height: 790px;
+     background-repeat: no-repeat;
+}
+ #check{
+     width: 1500px;
+     height: 100px;
+}
+ .hr-section {
+     display: flex;
+     flex-basis: : 100%;
+     align-items: center;
+     font-size: 12px;
+     margin: 8px 0px;
+}
+ .hr-section::after {
+     content: "";
+     flex-grow: 1;
+     background: rgba(0, 0, 0, 0.35);
+     height: 1px;
+     font-size: 0px;
+     line-height: 0px;
+     margin: 0px 16px;
+}
+ #sale{
+     background-color: #332828;
+     color: white;
+     margin: 0;
+     padding: 10px;
+     float: center;
+     width: 100%;
+     height: 60px;
+}
+ #about{
+     color: white;
+     background-image:url('assets/backgrounds/about.jpg');
+     width: 100%;
+     height: 790px;
+     margin: 0 auto;
+     padding: 5px;
+     background-repeat: no-repeat;
+     text-align: center;
+     justify-content: center;
+     display: flex;
+}
+ #fieldset {
+     width: 50px;
+     margin: 0 auto;
+    /*padding: 5px 15px 5px 15px;
+    */
+}
+ .container{
+     margin: 0;
+     padding: 1px;
+     width: 1280px;
+}
+ #footer{
+     position:relative;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     text-align: center;
+}
+ .footer {
+     background-color: #2D3142;
+     padding-top: 30px;
+     margin: 0 auto;
+     color: white;
+}
+ .footer-cell {
+     position: : relative;
+     float: left;
+     width: 33.33%;
+}
+ .footer-right {
+     padding-top: 60px;
+}
+ .footer-4 {
+     position: : relative;
+     float: left;
+     clear: both;
+     text-align: center;
+     vertical-align: middle;
+     width: 100%;
+     padding-top: 30px;
+}
+ 
