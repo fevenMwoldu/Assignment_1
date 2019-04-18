@@ -1,3 +1,10 @@
+#hero {
+    background-image:url('assets/backgrounds/hero.jpg');
+    width: 1280px;
+    height: 790px;
+    background-repeat: no-repeat;
+}
+
 #h1hero{
      color: white;
      text-align: center;
@@ -9,10 +16,7 @@
  #submit{
      align-self: center;
 }
- #hero{
-     margin: 0;
-     padding: 0;
-}
+
  .navbar{
      display: inline-block;
 }
@@ -22,6 +26,24 @@
      margin-left: 100px;
      margin-right: 100px;
 }
+.container_check{
+  background-color: #BBAB8B;
+  width: 1280px;
+  height: 50px;
+  padding-top: 50px;
+}
+
+
+#submit{
+   background-color: #FF5B4C;
+   justify-content:RIGHT;
+   position: relative;
+   float: right;
+   margin-right:50px;
+}
+
+
+
 /*table tshirt starts here*/
  .Table_Tshirt {
      display: table;
@@ -185,22 +207,8 @@
  .Tshirt2_Cell{
      color: #7D8730;
 }
- #check{
-    background-color: #BBAB8B;
-}
- #submit{
-    background-color: #FF5B4C
-}
- #hero {
-     background-image:url('assets/backgrounds/hero.jpg');
-     width: 1280px;
-     height: 790px;
-     background-repeat: no-repeat;
-}
- #check{
-     width: 1500px;
-     height: 100px;
-}
+
+
  .hr-section {
      display: flex;
      flex-basis: : 100%;
@@ -223,7 +231,7 @@
      margin: 0;
      padding: 10px;
      float: center;
-     width: 100%;
+     width: 1270px;
      height: 60px;
 }
  #about{
@@ -236,7 +244,7 @@
      background-repeat: no-repeat;
      text-align: center;
      justify-content: center;
-     display: flex;
+
 }
  #fieldset {
      width: 50px;
@@ -279,4 +287,3 @@
      width: 100%;
      padding-top: 30px;
 }
- 
