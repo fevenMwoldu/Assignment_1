@@ -1,289 +1,414 @@
-#hero {
-    background-image:url('assets/backgrounds/hero.jpg');
-    width: 1280px;
-    height: 790px;
-    background-repeat: no-repeat;
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-#h1hero{
-     color: white;
-     text-align: center;
-}
- #p1hero{
-     color: white;
-     text-align: center;
-}
- #submit{
-     align-self: center;
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
- .navbar{
-     display: inline-block;
+body {
+  color: black;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
 }
- body{
-     color: black;
-     justify-content: center;
-     margin-left: 100px;
-     margin-right: 100px;
+
+#header {
+  background-image: url('assets/backgrounds/hero.jpg');
+  width: 1280px;
+  height: 790px;
+  background-repeat: no-repeat;
 }
-.container_check{
+
+#header-logo {
+  float: left;
+  padding-top: 40px;
+  padding-left: 60px;
+}
+
+#navbar {
+  float: right;
+  padding-top: 40px;
+  padding-right: 100px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  display: inline;
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: white;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+#header-h1 {
+  padding-top: 150px;
+}
+
+#h1hero {
+  color: white;
+  text-align: center;
+}
+
+#p1hero {
+  color: white;
+  text-align: center;
+}
+
+#submit {
+  align-self: center;
+}
+
+.navbar {
+  display: inline-block;
+}
+
+.container_check {
   background-color: #BBAB8B;
   width: 1280px;
   height: 50px;
   padding-top: 50px;
 }
 
-
-#submit{
-   background-color: #FF5B4C;
-   justify-content:RIGHT;
-   position: relative;
-   float: right;
-   margin-right:50px;
+#submit {
+  background-color: #FF5B4C;
+  justify-content: RIGHT;
+  position: relative;
+  float: right;
+  margin-right: 50px;
 }
-
-
 
 /*table tshirt starts here*/
- .Table_Tshirt {
-     display: table;
-     background-color: #E7E5E5;
+
+.Table_Tshirt {
+  display: table;
+  background-color: #E7E5E5;
 }
- .Heading {
-     display: table-row;
-     font-weight: bold;
-     text-align: center;
+
+.Heading {
+  display: table-row;
+  font-weight: bold;
+  text-align: center;
 }
- .Row {
-     display: table-row;
+
+.Row {
+  display: table-row;
 }
- .Cell {
-     display: table-cell;
-     border: solid;
-     border-width: thin;
-     padding-left: 5px;
-     padding-right: 5px;
-     border: 0;
+
+.Cell {
+  display: table-cell;
+  border: solid;
+  border-width: thin;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 0;
 }
- .Tshirt_Cell{
-     color: #7D8730;
+
+.Tshirt_Cell {
+  color: #7D8730;
 }
+
 /*table_Tshirt ends here*/
+
 /*table_Pants starts here*/
- .Table_Pants {
-     display: table;
-     background-color: #E7E5E5;
+
+.Table_Pants {
+  display: table;
+  background-color: #E7E5E5;
 }
- .Heading {
-     display: table-row;
-     font-weight: bold;
-     text-align: center;
+
+.Heading {
+  display: table-row;
+  font-weight: bold;
+  text-align: center;
 }
- .Row {
-     display: table-row;
+
+.Row {
+  display: table-row;
 }
- .Cell {
-     display: table-cell;
-     border: solid;
-     border-width: thin;
-     padding-left: 5px;
-     padding-right: 5px;
-     border: 0;
+
+.Cell {
+  display: table-cell;
+  border: solid;
+  border-width: thin;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 0;
 }
- .Pant_forclazCell{
-     color: #7D8730;
+
+.Pant_forclazCell {
+  color: #7D8730;
 }
- .ci {
-     height: 25px;
-     width: 25px;
-     background-color: #bbb;
-     border-radius: 50%;
-     display: inline-block;
+
+.ci {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
 }
- .ci-blue {
-     background-color: blue;
+
+.ci-blue {
+  background-color: blue;
 }
- .ci-green {
-     background-color: green;
+
+.ci-green {
+  background-color: green;
 }
- .ci-red {
-     background-color: red;
+
+.ci-red {
+  background-color: red;
 }
+
 /*table_pants ends here*/
+
 /*table_pants starts here*/
- .Table_Backpack {
-     display: table;
-     background-color: #E7E5E5;
+
+.Table_Backpack {
+  display: table;
+  background-color: #E7E5E5;
 }
- .Heading {
-     display: table-row;
-     font-weight: bold;
-     text-align: center;
+
+.Heading {
+  display: table-row;
+  font-weight: bold;
+  text-align: center;
 }
- .Row {
-     display: table-row;
+
+.Row {
+  display: table-row;
 }
- .Cell {
-     display: table-cell;
-     border: solid;
-     border-width: thin;
-     padding-left: 5px;
-     padding-right: 5px;
-     border: 0;
+
+.Cell {
+  display: table-cell;
+  border: solid;
+  border-width: thin;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 0;
 }
- .BackPack_Cell{
-     color: #7D8730;
+
+.BackPack_Cell {
+  color: #7D8730;
 }
+
 /*table_pants ends here*/
+
 /*table_giacket starts here*/
- .Table_Giacket {
-     display: table;
-     background-color: #E7E5E5;
+
+.Table_Giacket {
+  display: table;
+  background-color: #E7E5E5;
 }
- .Heading {
-     display: table-row;
-     font-weight: bold;
-     text-align: center;
+
+.Heading {
+  display: table-row;
+  font-weight: bold;
+  text-align: center;
 }
- .Row {
-     display: table-row;
+
+.Row {
+  display: table-row;
 }
- .Cell {
-     display: table-cell;
-     border: solid;
-     border-width: thin;
-     padding-left: 5px;
-     padding-right: 5px;
-     border: 0;
+
+.Cell {
+  display: table-cell;
+  border: solid;
+  border-width: thin;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 0;
 }
- .Giacket_Cell{
-     color: #7D8730;
+
+.Giacket_Cell {
+  color: #7D8730;
 }
+
 /*table giacket ends here*/
- .Table_Shoes {
-     display: table;
-     background-color: #E7E5E5;
+
+.Table_Shoes {
+  display: table;
+  background-color: #E7E5E5;
 }
- .Heading {
-     display: table-row;
-     font-weight: bold;
-     text-align: center;
+
+.Heading {
+  display: table-row;
+  font-weight: bold;
+  text-align: center;
 }
- .Row {
-     display: table-row;
+
+.Row {
+  display: table-row;
 }
- .Cell {
-     display: table-cell;
-     border: solid;
-     border-width: thin;
-     padding-left: 5px;
-     padding-right: 5px;
-     border: 0;
+
+.Cell {
+  display: table-cell;
+  border: solid;
+  border-width: thin;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 0;
 }
- .Shoes_Cell{
-     color: #7D8730;
+
+.Shoes_Cell {
+  color: #7D8730;
 }
+
 /*table shoes ends here*/
- .Table_TshirtLadies {
-     display: table;
-     background-color: #E7E5E5;
-}
- .Heading {
-     display: table-row;
-     font-weight: bold;
-     text-align: center;
-}
- .Row {
-     display: table-row;
-}
- .Cell {
-     display: table-cell;
-     border: solid;
-     border-width: thin;
-     padding-left: 5px;
-     padding-right: 5px;
-     border: 0;
-}
- .Tshirt2_Cell{
-     color: #7D8730;
+
+.Table_TshirtLadies {
+  display: table;
+  background-color: #E7E5E5;
 }
 
+.Heading {
+  display: table-row;
+  font-weight: bold;
+  text-align: center;
+}
 
- .hr-section {
-     display: flex;
-     flex-basis: : 100%;
-     align-items: center;
-     font-size: 12px;
-     margin: 8px 0px;
+.Row {
+  display: table-row;
 }
- .hr-section::after {
-     content: "";
-     flex-grow: 1;
-     background: rgba(0, 0, 0, 0.35);
-     height: 1px;
-     font-size: 0px;
-     line-height: 0px;
-     margin: 0px 16px;
-}
- #sale{
-     background-color: #332828;
-     color: white;
-     margin: 0;
-     padding: 10px;
-     float: center;
-     width: 1270px;
-     height: 60px;
-}
- #about{
-     color: white;
-     background-image:url('assets/backgrounds/about.jpg');
-     width: 100%;
-     height: 790px;
-     margin: 0 auto;
-     padding: 5px;
-     background-repeat: no-repeat;
-     text-align: center;
-     justify-content: center;
 
+.Cell {
+  display: table-cell;
+  border: solid;
+  border-width: thin;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 0;
 }
- #fieldset {
-     width: 50px;
-     margin: 0 auto;
-    /*padding: 5px 15px 5px 15px;
-    */
+
+.Tshirt2_Cell {
+  color: #7D8730;
 }
- .container{
-     margin: 0;
-     padding: 1px;
-     width: 1280px;
+
+.hr-section {
+  display: flex;
+  flex-basis: : 100%;
+  align-items: center;
+  font-size: 12px;
+  margin: 8px 0px;
 }
- #footer{
-     position:relative;
-     left: 0;
-     bottom: 0;
-     width: 100%;
-     text-align: center;
+
+.hr-section::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 16px;
 }
- .footer {
-     background-color: #2D3142;
-     padding-top: 30px;
-     margin: 0 auto;
-     color: white;
+
+#sale {
+  background-color: #332828;
+  margin: 0 auto;
+  width: 100%;
+  height: 60px;
+  vertical-align: middle;
 }
- .footer-cell {
-     position: : relative;
-     float: left;
-     width: 33.33%;
+
+#twitter-logo {
+  position: relative;
+  float: left;
+  padding-left: 150px;
+  padding-top: 12px;
+  height: 100%;
 }
- .footer-right {
-     padding-top: 60px;
+
+#sale-text {
+  position: relative;
+  float: left;
+  padding-left: 100px;
+  color: white;
+  height: 100%;
 }
- .footer-4 {
-     position: : relative;
-     float: left;
-     clear: both;
-     text-align: center;
-     vertical-align: middle;
-     width: 100%;
-     padding-top: 30px;
+
+#about {
+  color: white;
+  background-image: url('assets/backgrounds/about.jpg');
+  background-repeat: no-repeat;
+  background-size: 1350px 392px;
+  width: 100%;
+  height: 392px;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+#about-us {
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px 80px 20px 80px;
+}
+
+#about-us>p {
+  font-size: 25px;
+  text-align: center;
+}
+
+.container {
+  margin: 0;
+  padding: 1px;
+  width: 1280px;
+}
+
+#footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer {
+  background-color: #2D3142;
+  padding-top: 30px;
+  margin: 0 auto;
+  color: white;
+}
+
+.footer-cell {
+  position: : relative;
+  float: left;
+  width: 33.33%;
+}
+
+.footer-right {
+  padding-top: 60px;
+}
+
+.footer-4 {
+  position: : relative;
+  float: left;
+  clear: both;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  padding-top: 30px;
 }
