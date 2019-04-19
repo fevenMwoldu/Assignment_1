@@ -89,7 +89,8 @@ li a:hover {
   background-color: #BBAB8B;
   width: 1280px;
   height: 50px;
-  padding-top: 50px;
+  padding-top:13px;
+
 }
 
 #submit {
@@ -98,6 +99,7 @@ li a:hover {
   position: relative;
   float: right;
   margin-right: 50px;
+
 }
 
 /*table tshirt starts here*/
@@ -130,6 +132,17 @@ li a:hover {
   color: #7D8730;
 }
 
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
 /*table_Tshirt ends here*/
 
 /*table_Pants starts here*/
@@ -137,6 +150,7 @@ li a:hover {
 .Table_Pants {
   display: table;
   background-color: #E7E5E5;
+  margin-left: 30px;
 }
 
 .Heading {
@@ -168,6 +182,7 @@ li a:hover {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+text-align: right;
 }
 
 .ci-blue {
@@ -189,6 +204,7 @@ li a:hover {
 .Table_Backpack {
   display: table;
   background-color: #E7E5E5;
+  margin-left: 30px;
 }
 
 .Heading {
@@ -251,6 +267,15 @@ li a:hover {
 .Table_Shoes {
   display: table;
   background-color: #E7E5E5;
+  margin-left: 30px;
+}
+.Table1{
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.Table2{
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .Heading {
@@ -281,6 +306,7 @@ li a:hover {
 .Table_TshirtLadies {
   display: table;
   background-color: #E7E5E5;
+  margin-left: 30px;
 }
 
 .Heading {
@@ -304,6 +330,13 @@ li a:hover {
 
 .Tshirt2_Cell {
   color: #7D8730;
+}
+.ci-brown {
+  background-color: #D0B17A;
+}
+
+.ci-white {
+  background-color: white;
 }
 
 .hr-section {
@@ -359,6 +392,7 @@ li a:hover {
   text-align: center;
   justify-content: center;
   padding-top: 60px;
+  margin-top: 50px;
 }
 
 #about-us {
