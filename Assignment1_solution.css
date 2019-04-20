@@ -1,448 +1,281 @@
+/* Global */
+
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 body {
-  color: black;
-  justify-content: center;
-  margin-left: 100px;
-  margin-right: 100px;
+    color: black;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
+.down-arrow {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+
+/* Header */
+
 #header {
-  background-image: url('assets/backgrounds/hero.jpg');
-  width: 1280px;
-  height: 790px;
-  background-repeat: no-repeat;
+    background-image: url('assets/backgrounds/hero.jpg');
+    width: 100%;
+    height: 790px;
+    background-repeat: no-repeat;
+    background-color: green;
+    background-size: cover;
 }
 
 #header-logo {
-  float: left;
-  padding-top: 40px;
-  padding-left: 60px;
+    float: left;
+    padding-top: 40px;
+    padding-left: 60px;
 }
 
 #navbar {
-  float: right;
-  padding-top: 40px;
-  padding-right: 100px;
+    float: right;
+    padding-top: 40px;
+    padding-right: 100px;
 }
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 li {
-  display: inline;
-  float: left;
+    float: left;
 }
 
 li a {
-  display: block;
-  padding: 8px;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  color: white;
+    display: block;
+    padding: 8px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
 }
 
 li a:hover {
-  background-color: #111;
+    background-color: #111;
 }
 
-#header-h1 {
-  padding-top: 150px;
+#page-title {
+    margin-top: 150px;
+    color: white;
+    text-align: center;
 }
 
-#h1hero {
-  color: white;
-  text-align: center;
+#page-desc {
+    color: white;
+    text-align: center;
 }
 
-#p1hero {
-  color: white;
-  text-align: center;
+#big-down-arrow {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.big-down-arrow {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    border-color: white;
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Product Categories Filter */
+
+.prod-filter {
+    background-color: #BBAB8B;
+    height: 50px;
+    width: 100%;
+    padding-top: 13px;
+    padding-left: 50px;
 }
 
 #submit {
-  align-self: center;
+    background-color: #FF5B4C;
+    justify-content: RIGHT;
+    position: relative;
+    float: right;
+    margin-right: 50px;
 }
 
-.navbar {
-  display: inline-block;
+
+/* Products */
+
+.products-row {
+    width: 100%;
+    padding: 40px 40px 0px 40px;
 }
 
-.container_check {
-  background-color: #BBAB8B;
-  width: 1280px;
-  height: 50px;
-  padding-top:13px;
-
+.prod-category {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    font-size: 12px;
+    margin: 8px 0px;
 }
 
-#submit {
-  background-color: #FF5B4C;
-  justify-content: RIGHT;
-  position: relative;
-  float: right;
-  margin-right: 50px;
-
+.prod-category::after {
+    content: "";
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.35);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 16px;
 }
 
-/*table tshirt starts here*/
-
-.Table_Tshirt {
-  display: table;
-  background-color: #E7E5E5;
+.prod-pages {
+    text-align: right;
 }
 
-.Heading {
-  display: table-row;
-  font-weight: bold;
-  text-align: center;
+.prod-cell {
+    width: 30%;
+    padding: 10px;
+    float: left;
+    background-color: #E7E5E5;
 }
 
-.Row {
-  display: table-row;
+.prod-selected {
+    border: brown 3px solid;
 }
 
-.Cell {
-  display: table-cell;
-  border: solid;
-  border-width: thin;
-  padding-left: 5px;
-  padding-right: 5px;
-  border: 0;
+.prod-cell+.prod-cell {
+    margin-left: 5%;
 }
 
-.Tshirt_Cell {
-  color: #7D8730;
+.prod-size {
+    float: left;
+    margin: 0;
 }
 
-i {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-}
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+.prod-colors {
+    float: right;
 }
 
-/*table_Tshirt ends here*/
-
-/*table_Pants starts here*/
-
-.Table_Pants {
-  display: table;
-  background-color: #E7E5E5;
-  margin-left: 30px;
+.prod-img {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.Heading {
-  display: table-row;
-  font-weight: bold;
-  text-align: center;
+.prod-image {
+    height: 180px;
 }
 
-.Row {
-  display: table-row;
+.prod-name {
+    float: left;
+    margin: 0;
 }
 
-.Cell {
-  display: table-cell;
-  border: solid;
-  border-width: thin;
-  padding-left: 5px;
-  padding-right: 5px;
-  border: 0;
+.prod-price {
+    float: right;
+    margin: 0;
 }
 
-.Pant_forclazCell {
-  color: #7D8730;
-}
 
-.ci {
-  height: 25px;
-  width: 25px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-text-align: right;
-}
-
-.ci-blue {
-  background-color: blue;
-}
-
-.ci-green {
-  background-color: green;
-}
-
-.ci-red {
-  background-color: red;
-}
-
-/*table_pants ends here*/
-
-/*table_pants starts here*/
-
-.Table_Backpack {
-  display: table;
-  background-color: #E7E5E5;
-  margin-left: 30px;
-}
-
-.Heading {
-  display: table-row;
-  font-weight: bold;
-  text-align: center;
-}
-
-.Row {
-  display: table-row;
-}
-
-.Cell {
-  display: table-cell;
-  border: solid;
-  border-width: thin;
-  padding-left: 5px;
-  padding-right: 5px;
-  border: 0;
-}
-
-.BackPack_Cell {
-  color: #7D8730;
-}
-
-/*table_pants ends here*/
-
-/*table_giacket starts here*/
-
-.Table_Giacket {
-  display: table;
-  background-color: #E7E5E5;
-}
-
-.Heading {
-  display: table-row;
-  font-weight: bold;
-  text-align: center;
-}
-
-.Row {
-  display: table-row;
-}
-
-.Cell {
-  display: table-cell;
-  border: solid;
-  border-width: thin;
-  padding-left: 5px;
-  padding-right: 5px;
-  border: 0;
-}
-
-.Giacket_Cell {
-  color: #7D8730;
-}
-
-/*table giacket ends here*/
-
-.Table_Shoes {
-  display: table;
-  background-color: #E7E5E5;
-  margin-left: 30px;
-}
-.Table1{
-  padding-left: 200px;
-  padding-right: 200px;
-}
-.Table2{
-  padding-left: 200px;
-  padding-right: 200px;
-}
-
-.Heading {
-  display: table-row;
-  font-weight: bold;
-  text-align: center;
-}
-
-.Row {
-  display: table-row;
-}
-
-.Cell {
-  display: table-cell;
-  border: solid;
-  border-width: thin;
-  padding-left: 5px;
-  padding-right: 5px;
-  border: 0;
-}
-
-.Shoes_Cell {
-  color: #7D8730;
-}
-
-/*table shoes ends here*/
-
-.Table_TshirtLadies {
-  display: table;
-  background-color: #E7E5E5;
-  margin-left: 30px;
-}
-
-.Heading {
-  display: table-row;
-  font-weight: bold;
-  text-align: center;
-}
-
-.Row {
-  display: table-row;
-}
-
-.Cell {
-  display: table-cell;
-  border: solid;
-  border-width: thin;
-  padding-left: 5px;
-  padding-right: 5px;
-  border: 0;
-}
-
-.Tshirt2_Cell {
-  color: #7D8730;
-}
-.ci-brown {
-  background-color: #D0B17A;
-}
-
-.ci-white {
-  background-color: white;
-}
-
-.hr-section {
-  display: flex;
-  flex-basis: : 100%;
-  align-items: center;
-  font-size: 12px;
-  margin: 8px 0px;
-}
-
-.hr-section::after {
-  content: "";
-  flex-grow: 1;
-  background: rgba(0, 0, 0, 0.35);
-  height: 1px;
-  font-size: 0px;
-  line-height: 0px;
-  margin: 0px 16px;
-}
-
-#sale {
-  background-color: #332828;
-  margin: 0 auto;
-  width: 100%;
-  height: 60px;
-  vertical-align: middle;
-}
-
-#twitter-logo {
-  position: relative;
-  float: left;
-  padding-left: 150px;
-  padding-top: 12px;
-  height: 100%;
-}
-
-#sale-text {
-  position: relative;
-  float: left;
-  padding-left: 100px;
-  color: white;
-  height: 100%;
-}
+/* About Us */
 
 #about {
-  color: white;
-  background-image: url('assets/backgrounds/about.jpg');
-  background-repeat: no-repeat;
-  background-size: 1350px 392px;
-  width: 100%;
-  height: 392px;
-  margin: 0 auto;
-  text-align: center;
-  justify-content: center;
-  padding-top: 60px;
-  margin-top: 50px;
+    color: white;
+    background-image: url('assets/backgrounds/about.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 392px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    padding-top: 60px;
+    margin-top: 50px;
 }
 
 #about-us {
-  width: 700px;
-  margin: 0 auto;
-  padding: 20px 80px 20px 80px;
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px 80px 20px 80px;
 }
 
 #about-us>p {
-  font-size: 25px;
-  text-align: center;
+    font-size: 25px;
+    text-align: center;
 }
 
-.container {
-  margin: 0;
-  padding: 1px;
-  width: 1280px;
+
+/* Promotion */
+
+#sale {
+    background-color: #332828;
+    margin: 0 auto;
+    width: 100%;
+    height: 60px;
+    vertical-align: middle;
 }
 
-#footer {
-  position: relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
+#twitter-logo {
+    float: left;
+    padding-left: 150px;
+    padding-top: 12px;
 }
 
-.footer {
-  background-color: #2D3142;
-  padding-top: 30px;
-  margin: 0 auto;
-  color: white;
+#sale-text {
+    float: left;
+    padding-left: 100px;
+    color: white;
+    height: 100%;
+}
+
+
+/* Social */
+
+#social {
+    width: 100%;
+    padding: 40px;
+    background-color: #414141;
+    color: white;
 }
 
 .footer-cell {
-  position: : relative;
-  float: left;
-  width: 33.33%;
+    float: left;
+    width: 30%;
+    text-align: center;
 }
 
-.footer-right {
-  padding-top: 60px;
+.footer-cell+.footer-cell {
+    margin-left: 5%;
 }
 
-.footer-4 {
-  position: : relative;
-  float: left;
-  clear: both;
-  text-align: center;
-  vertical-align: middle;
-  width: 100%;
-  padding-top: 30px;
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: #414141;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+
+footer>p {
+    margin: 0;
 }
