@@ -112,11 +112,14 @@ li a:hover {
 }
 
 #submit {
-    background-color: #FF5B4C;
+    background-color: #661a00;
     justify-content: RIGHT;
     position: relative;
     float: right;
     margin-right: 50px;
+    border: 0px;
+    color: white;
+    padding: 5px 10px 5px 10px;
 }
 
 
